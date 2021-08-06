@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const secret = "Esto es lo mas dificil del bootcamp";
+const secret = "Prueba tecnica bounsel";
 
 const authenticate = (req, res, next) => {
 

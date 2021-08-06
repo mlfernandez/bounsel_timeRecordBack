@@ -11,11 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsTo(models.User, { foreignKey:'idUser'});
     }
   };
   Record.init({
     startTime: DataTypes.DATE,
-    endTime: DataTypes.DATE
+    endTime: DataTypes.DATE,
+    idUser: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Record',

@@ -1,7 +1,7 @@
 const userController = require('./userController');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const secret = "Esto es lo mas dificil del bootcamp";
+const secret = "Prueba tecnica bounsel";
 
 
 class LoginController {
@@ -19,12 +19,7 @@ class LoginController {
 
         let check = await bcrypt.compare(passwordCheck, password);
 
-          // Para activar la cuenta por email
-        if (!user.isActive) {
-            throw new Error("La cuenta no está activa. Por favor, revisa tu correo electrónico y activa tu cuenta.");
-          }
-
-          
+ 
         if(!check){
             throw new Error("El password o el email no coinciden");
             
