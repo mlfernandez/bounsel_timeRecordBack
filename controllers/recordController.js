@@ -37,7 +37,6 @@ class Time {
         let consulta = "SELECT * ,  TIMESTAMPDIFF(minute, startTime, endTime) AS timeRecord FROM records where startTime >= CAST('" + startTime + "' AS DATE) AND endTime <= CAST('" + endTime + "' AS DATE) AND idUser ="+ idUser 
 
         const results = await sequelize.query(consulta, { type: QueryTypes.SELECT });
-        console.log(results)
         return results
 
 

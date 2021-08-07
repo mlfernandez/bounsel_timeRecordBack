@@ -80,40 +80,6 @@ router.delete("/:id", admin, async (req, res) => {
   }
 });
 
-// Mail de confirmacion
-router.get("/confirm/:confirmationCode", async (req, res) => {
-  try {
-    token = req.params.confirmationCode;
-    res.json(await userController.updateActive(token));
-  } catch (err) {
-    return res.status(500).json({
-      message: err.message,
-    });
-  }
-});
 
-/* // Usuario modificar contraseña
-router.put('/changepassword', authenticate, async (req,res) => {
-  try{
-      const body = req.body;
-      res.json(await userController.modifyPassword(body)); 
-  }catch (err) {
-      return res.status(500).json({
-          message: err.message
-      });
-  }
-})
-
-// Usuario modificar contraseña
-router.put('/emailchangepassword', authenticate, async (req,res) => {
-  try{
-      const body = req.body;
-      res.json(await userController.lostPassword(body)); 
-  }catch (err) {
-      return res.status(500).json({
-          message: err.message
-      });
-  }
-}) */
 
 module.exports = router;
