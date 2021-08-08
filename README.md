@@ -46,15 +46,15 @@ Se utilizaron las siguientes tecnologías:
 
 | <img src="img/javascript2.png" alt="JavaScript" width="30"/> | JavaScript | 
 
-| <img src="img/nodejs.png" alt="HTML5" width="30"/> | NODE JS & EXPRESS |
+| <img src="img/nodejs.png" alt="NodeExpress" width="30"/> | NODE JS & EXPRESS |
 
-| <img src="img/axios.png" alt="CSS3" width="30"/> | AXIOS | 
+| <img src="img/axios.png" alt="Axios" width="30"/> | AXIOS | 
 
 | <img src="img/git.png" alt="Git" width="30"/> | Git |
 
 | <img src="img/github2.png" alt="GitHub" width="30"/> | GitHub | 
 
-| <img src="img/postman.png" alt="GitHub" width="30"/> | Postman |
+| <img src="img/postman.png" alt="Postman" width="30"/> | Postman |
 
 
 
